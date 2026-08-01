@@ -2,9 +2,9 @@ import React, { useState, useRef } from "react";
 import { Mail, Phone } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
-const SERVICE_ID = "service_h06bufm";
-const TEMPLATE_ID = "template_3ftquw9";
-const PUBLIC_KEY = "_Nzs5g0cjGjdpPDch";
+const SERVICE_ID = "service_l3k6aj1";
+const TEMPLATE_ID = "template_j6wu0j7";
+const PUBLIC_KEY = "k-TBZ6WjZeVU-1xJx";
 
 const ContactSection = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -39,6 +39,7 @@ const ContactSection = () => {
       })
       .catch((error) => {
         console.error("EmailJS Error:", error);
+        
         alert("Failed to send message. Please try again later.");
         setIsSubmitting(false);
       });
